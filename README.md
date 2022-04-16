@@ -7,9 +7,14 @@
 #### Build
     sudo snapcraft
 
-#### Install
+#### Install SNAP
     sudo snap install [snap file] --classic --dangerous
-    
+ 
+#### Run web Application Without SNAP
+    sh stopsnap.sh
+    cd Flask 
+    python3 runserver.py
+ 
 ![ui](https://user-images.githubusercontent.com/4043666/163672226-5a7e5ebb-c09d-4948-9cfa-733e0ebdbb89.PNG)
 
 ## Build and install Scripts
