@@ -4,14 +4,13 @@
 - This is snapcraft example for flask with bootstrap5
 - Use psutil to get system information
 
-![ui](https://user-images.githubusercontent.com/4043666/163672226-5a7e5ebb-c09d-4948-9cfa-733e0ebdbb89.PNG)
-
-
 #### Build
     sudo snapcraft
 
 #### Install
     sudo snap install [snap file] --classic --dangerous
+    
+![ui](https://user-images.githubusercontent.com/4043666/163672226-5a7e5ebb-c09d-4948-9cfa-733e0ebdbb89.PNG)
 
 ## Build and install Scripts
 #### Modify [snap file] in script
