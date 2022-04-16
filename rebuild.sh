@@ -9,9 +9,9 @@ sudo snapcraft clean
 sleep 1
 echo ""
 echo "> Remove Old APP from installed snap"
-sudo snap remove  flask-snap-example
+sudo snap remove  [snap file]
 echo "> Remove Done"
 echo ""
 echo "> Install new APP SNAP"
-sudo snap install flask-snap-example_0.1_amd64.snap --classic --dangerous
+sudo snap install [snap file] --classic --dangerous
 echo "> DONE"
