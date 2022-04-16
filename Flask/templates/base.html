@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+<!--
+
+-->
+   <title>{% block title %}{% endblock title %}</title>
+
+    <!-- Import favicon -->
+    <link rel=" shortcut  icon" href="{{ url_for('static', filename='media/favicon.ico') }}"/>
+ 
+    <!-- Import stylesheets -->
+    <!--  Bootstrap 5 -->
+    <script type="javascript" src="{{ url_for('static', filename='libs/bootstrap-5.0.2-dist/js/bootstrap.min.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='libs/bootstrap-5.0.2-dist/css/bootstrap.min.css') }}" rel="stylesheet" id="bootstrap-css"/>
+    <!-- Bootstrap 4 -->
+    <!--
+    <script type="javascript" src="{{ url_for('static', filename='libs/bootstrap-4.4.1-dist/js/bootstrap.min.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='libs/bootstrap-4.4.1-dist/css/bootstrap.min.css') }}" rel="stylesheet" id="bootstrap-css"/>
+    -->
+    <link href="{{ url_for('static', filename='css/sidebar.css') }}" rel="stylesheet"  type="text/css" >
+    <link href="{{ url_for('static', filename='css/nav_dropdown_menu.css') }}" rel="stylesheet"  type="text/css" >
+    <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet"  type="text/css" >
+    <link href="{{ url_for('static', filename='css/table.css') }}" rel="stylesheet"  type="text/css" >
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet"  type="text/css" >
+    <link href="{{ url_for('static', filename='css/hover.css') }}" rel="stylesheet"  type="text/css" >
+<!--
+    <link href="{{ url_for('static', filename='css/bootstrap-steps.min.css') }}" rel="stylesheet">
+-->
+    <!-- Import library scripts -->
+    <script src="{{ url_for('static', filename='libs/jquery-3.4.1.min.js') }}"></script>
+    <script type="javascript" src="{{ url_for('static', filename='libs/popper.min.js') }}"></script>
+<!--    <script type="javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script> -->
+
+<!--
+    <script type="javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type="javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+-->
+    <script type="javascript" src="{{ url_for('static', filename='js/utils.js') }}"></script>
+    <script type="javascript" src="{{ url_for('static', filename='js/plotly-2.3.1.min.js') }}"></script>
+    <script type="javascript" src="{{ url_for('static', filename='js/chart.min.js') }}"> </script>
+    <script type="javascript" src="{{ url_for('static', filename='js/custom.js') }}"> </script>
+
+
+
+</head>
+<body>
+<header>
+  <style>
+     video::-internal-media-controls-download-button {     display:none;     }
+     video::-webkit-media-controls-enclosure {         overflow:hidden;     }
+     video::-webkit-media-controls-panel {         width: calc(100% + 30px);     }
+  </style>
+</header>
+   
+<!-- Block Start -->
+{% block index %}
+{% endblock index %}
+
+{% block main %}
+
+
+<!-- Slide -->
+<div class="wrapper"> 
+  <div id="sidebar" class="d-flex flex-column  " style="width: 250px;"> 
+ 
+        <div class="sidebar-header">
+          <a  href="/" style="height: 100%;" >	
+            <img  alt="hank" src="{{ url_for('static', filename='media/LOGO.PNG') }}"  style="height:30px ;  display: block;  margin-left: auto;      margin-right: auto;">
+          </a>
+        </div>
+
+      </div>
+
+    <!-- RIGHT -->
+    <div id="content"class=" flex-fill bd-highlight">
+    <!-- Navi -->
+    <nav class="navbar navbar-expand-lg navbar-light  " style="    padding: 0;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> </a>
+        <button class=" navbar-toggler   "   style="  font-size:15px;  padding: 5px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse   " id="navbarTogglerDemo01">
+ 
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <!--reboot -->
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+ 
+ 
+        {% block content %}
+ 
+        {% endblock content %}
+    </div>
+    
+</div>
+
+{% endblock main %}
+ 
+
+
+<!-- Footer Start  -->
+{% block footer %}
+{% endblock footer %}
+<!--Footer End  -->
+
+  
+<script type="text/javascript">
+</script>
+
+  {% block script %}
+  
+  {% endblock script %}
+
+
+
+
+</body>
+</html>

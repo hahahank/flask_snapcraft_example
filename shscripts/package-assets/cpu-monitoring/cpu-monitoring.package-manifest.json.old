@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "id": "cpu-monitoring",
+  "menus": {
+    "sidebar": [
+      {
+        "id": "my-cpu",
+        "title": "CPU-Monitoring",
+        "icon": "bosch-ic-desktop-graph",
+        "permissions": [
+        ],
+        "items": [
+          {
+            "id": "cpu-monitoring-main",
+            "title": "Check cpu load",
+            "link": "http://${hostname}:12121/",
+            "permissions": []
+          }
+        ]
+      }
+    ],
+    "settings": [],
+    "overview": [
+      {
+        "id": "cpu-monitoring-main",
+        "title": "cpu-monitoring",
+        "icon": "bosch-ic-desktop-graph",
+        "link": "http://${hostname}:12121/",
+        "permissions": []
+      }
+    ]
+  }
+}

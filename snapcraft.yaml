@@ -1,0 +1,70 @@
+name: flask-snap-example
+version: '0.1'
+base: core18
+summary: Flask Snap example
+description: |
+     SNAP for Flask Web http://yourDeviceIp:1234
+          
+confinement: strict
+grade: stable
+
+#
+## Build Date : 2022/04/16
+
+apps:
+  flask-server: 
+    command: sh $SNAP/bin/runserver.sh  
+    plugs:
+      - network-control
+      - network-observe
+      - network
+      - network-bind
+      - process-control
+      - gsettings
+      - udisks2
+      - hardware-observe
+      - system-observe
+      - mount-observe
+    daemon: simple 
+    
+  desktop-launch:
+    command: bin/desktop-launch
+    plugs:
+      - desktop  
+      
+
+  info: 
+    command: sh $SNAP/bin/info.sh  
+    plugs: [network, network-bind, mount-observe, network-observe, system-observe, bluetooth-control]
+
+parts:
+
+  flask:
+    plugin: python
+    python-version: python3
+    python-packages: [flask]
+    build-packages:
+      - python3-dev
+      - build-essential
+      
+  psutil:
+    plugin: python
+    python-version: python3
+    python-packages: [psutil]
+    build-packages:
+      - python3-dev
+      - build-essential
+ 
+  python-code:  
+    source: ./Flask/
+    plugin: dump
+    organize:
+      '*': bin/Flask/
+
+  shscripts:  
+    source: ./shscripts/
+    plugin: dump
+    organize:
+      '*': bin/
+
+

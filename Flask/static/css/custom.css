@@ -1,0 +1,496 @@
+
+.navbar {  
+    margin-bottom: 0px !important; 
+}
+
+.iconLink > svg {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+.progress-card-title{
+  font-size: 2.2rem!important;
+  height: 100px;
+  margin-top: 15px;
+  margin-left: 10px;
+  align-items: center!important;
+  justify-content: flex-start!important;
+  width: 100%!important;
+  position: absolute!important;
+  display: flex!important;
+}
+.progress-card-title > svg {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.progress-card-content{
+  font-size: 2.2rem;
+  height: 100px;
+  margin-top: 15px;
+  margin-left: -20px;
+  align-items: center!important;
+  justify-content: flex-end!important;
+  width: 100%!important;
+  position: absolute!important;
+  display: flex!important;
+}
+
+.progress-card-footer{
+  font-size: 1.1rem;
+  height: 100px;
+  align-items: flex-end!important;
+  justify-content: flex-end!important;
+  width: 100%!important;
+  position: absolute!important;
+  display: flex!important;
+}
+.progress-card-blue{
+  background-color: #5599ff;
+}
+
+.progress-card-blue > div {
+  background-color: #0066ff;
+}
+
+.progress-card-yellow{
+  background-color: #f8d25f;
+}
+
+.progress-card-yellow > div {
+  background-color: #fec106;
+}
+
+.progress-card-green{
+  background-color: #44a779;
+}
+
+.progress-card-green > div {
+  background-color: #198754;
+}
+
+.progress-card-red{
+  background-color: #ff8888;
+}
+
+.progress-card-red > div {
+  background-color: #dc3545;
+}
+
+.footer-main-type1{
+    margin-top: 0px;
+    min-height:500px;
+    margin-bottom: 0px;
+    padding-top: 120px;
+	background-color: #e6e6e6;
+	color: black;
+}
+
+.footer-main-type2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+    background-color: #e50011;
+    color: #FFFFFF;
+    text-align: right;
+
+}
+
+.footer-main{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 15px;
+    background-color: #161616;
+   color: #666666;
+}
+
+.img-responsive{
+   max-height: 100%;
+}
+
+ 
+.table-hover > tbody > tr:hover {
+  background-color: rgba(229, 0, 17, 0.3) !important;
+}
+
+.nav-tabs > li > a:hover {
+        border-color: rgba(204, 204, 204, 0) !important;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+   border: 0px solid #ddd !important; 
+   color:#e50011 !important;
+}
+.nav-tabs {
+    border-bottom: 0px solid #ddd !important;
+
+}
+.navbar-light .navTop.active .nav-link {
+        color: #e50011 !important;
+}
+
+
+
+.carousel-indicators li{
+  width: 19px  !important;
+  height: 19px !important;
+  border-radius: 19px !important;
+  border: 2px solid #333 !important;
+}
+.carousel-indicators .active{
+    
+    background-color: #333 !important;
+    
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+.navInventec{
+    padding-left: 0px;
+    padding-right: 45px
+}
+.navInventecSpan{
+    padding-left : 45px;
+}
+
+
+
+ 
+
+#colorless-btn{
+  background:rgba(255, 255, 255, 0.4);
+  color: #fff;
+  letter-spacing: 6px;
+  font-size: 1.5em;
+  padding: 12px 90px 12px 90px;
+  text-decoration: none;
+  border: none;
+  position: relative;
+  top: 50px;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+#colorless-btn:hover{
+  background:rgba(255, 255, 255, 0.7);
+  color: #FFF;
+}
+
+
+.dsvideo{
+  width: 100%; 
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: -999;
+}
+ 
+
+
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: red;
+
+}
+
+
+.navIcon{
+    font-size:20px;
+    color:#e50011 !important;
+    font-size: 20px;
+    font-family: MyriadPRO;
+    padding-left: 0px !important;
+
+}
+.navIcon:hover {
+    font-size:24px;
+}
+.navTop {
+    font-size: 15px;
+    font-family: MyriadPRO;
+ 
+    color: #737373 !important;
+}
+.navTop:hover {    
+    color:#333 !important;
+    background-color: #ccc!important;
+}
+.navTopActive {
+  color:#e50011 !important;
+  padding-left: 0px;
+}
+.navSmallLine{
+  border-left: 2px solid #737373;
+  padding-right:40px ;
+}
+.navSmallPlay{
+  font-size: 6px; padding-right:5px;
+}
+ 
+
+.leftNavOut{
+    margin-top : 15px ;
+    height:1000px
+}
+
+.tHead{
+    color: #0066cc;
+    text-align: center;
+}
+
+.tData{
+    text-align: center;
+}
+
+
+
+
+@font-face {
+  font-family: 'MyriadPRO';
+  src: url('fonts/MYRIADPROREGULAR.eot');
+  src: url('fonts/MYRIADPROREGULAR.woff');
+}
+
+
+
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+    -moz-transform:scale(1.20); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.20); /* Opera */
+    transform:translatZ(100) scale(1.2);
+   border-bottom: 0px solid #e50011;
+   border-top: 0px solid #e50011;
+   border-left: 0px solid #e50011;
+   border-right: 0px solid #e50011;
+}
+
+.img-pointer img {
+}
+.img-pointer img:hover {
+    cursor: pointer;
+}
+
+  
+  
+.grayscale {
+  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  filter: brightness(1.10) grayscale(100%); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+	height: 450px;
+	width:100%;
+	position:relative;
+	background: #202020;
+	overflow:hidden;
+}
+#footer_bg {
+	position:relative;
+	right:720px;
+	height:450px;
+}
+
+.img_all {
+	height:100%;
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+.img1{ background: transparent url(/media/index/cloudValue.png) no-repeat 0% 100px; background-size:100%}
+.img2{ background: transparent url(/media/index/Redcurves-01.png) no-repeat 50% 30px; background-size:30%}
+.img3{ background: transparent url(/media/index/wording-01.png) no-repeat 120% 130px; background-size:90%}
+.img4{ background: transparent url(/media/index/Coin-01.png) no-repeat 100% 30px; background-size:7%}
+.img5{ background: transparent url(/media/index/index_icon4.png) no-repeat 100% 30px; background-size:7%}
+.img6{ background: transparent url(/media/index/index_icon3.png) no-repeat 100% 30px; background-size:7%}
+.img7{ background: transparent url(/media/index/index_icon2.png) no-repeat 50% 20px; background-size:7%}
+.img8{ background: transparent url(/media/index/index_icon1.png) no-repeat 100% 30px; background-size:7%}
+.img9{ background: transparent url(/media/index/rack.gif) no-repeat 0px 0px; background-size:100%}
+
+
+
+.gloIcon{
+    margin-right: 5px;    
+    margin-left: 10px;
+}
+.gloNoIcon{
+    margin-left: 33px;
+}
+.gloSubTitle{
+    font-weight: bold; 
+    color: #777;
+}
+.gloTitle{
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+#    font-family: MyriadPRO;
+}
+
+
+
+.pageTitle{
+  font-family: MyriadPRO;
+    margin-left: 60px;
+    font-size: 38px
+}
+
+.pageSubTitle{
+    font-size: 24px;
+    font-family: MyriadPRO;
+}
+
+.pageBread{
+    background-color:transparent  !important;
+    padding:0px 0px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: MyriadPRO;
+}
+
+
+.infoShortTitle{
+  font-size:24px;
+  font-family: MyriadPRO;
+  margin-bottom: 20px;
+}
+.infoShortInfo{
+  font-family:calibri;
+  font-size:21px;
+}
+.infoTabTitle{
+  font-size: 18px;
+  font-family: MyriadPRO;
+
+}
+.infoTabDetail{
+  font-size:17px;
+  font-family:calibri;
+
+}
+.infoTabDetailBlue{
+  font-size: 17px;
+
+  font-family: MyriadPRO;
+  color:#0066cc;
+}
+
+
+
+.box-shadow4{
+    -moz-box-shadow:-5px -5px 5px #999;              /* For Firefox3.6+ */
+    -webkit-box-shadow:-5px -5px 5px #999 ;           /* For Chrome5+, Safari5+ */
+    box-shadow:-5px -5px 5px #999 ;                   /* For Latest Opera */
+}
+
+
+
+
+
+.btn-blue1{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+
+    font-family: MyriadPRO !important; 
+    background-color: rgba(0, 0, 0, 0);
+    color: #0066cc;
+    border-color: #0066cc !important; 
+
+}
+.btn-blue1 :hover{
+    background-color:#0066cc;
+    color:#fff;
+
+}
+
+.btn-blue2{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+
+    padding: 1px 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+
+    font-family: MyriadPRO !important;
+    background-color: rgba(0, 0, 0, 0);
+    color: #0066cc ;
+    border-color: #0066cc !important;
+}
+
+.btn-blue2:hover{
+    background-color:#0066cc;
+    color:#fff;
+    
+}
+

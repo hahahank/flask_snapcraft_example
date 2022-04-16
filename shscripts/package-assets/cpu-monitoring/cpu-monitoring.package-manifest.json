@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "id": "cpu-monitoring",
+  "services": {
+    "proxyMapping": [
+      {
+        "name": "webfilemanager",
+        "url": "/cpumonitor/",
+        "binding": ":12121",
+        "restricted": [
+        ]        
+      }
+    ]
+  },
+  "menus": {
+    "sidebar": [
+      {
+        "id": "webfilemanagerpy1",
+        "title": "CPU Monitor",
+        "icon": "bosch-ic-desktop-graph",
+        "link": "/cpumonitor/"
+      }
+    ],
+    "settings": [
+    ],
+    "overview": [
+      {
+        "id": "webfilemanagerpy",
+        "title": "CPU Monitor",
+        "icon": "bosch-ic-desktop-graph",
+        "link": "/cpumonitor/"
+      }
+    ]    
+  }
+}

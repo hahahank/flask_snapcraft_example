@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Index
+{% endblock title %}
+
+
+{% block content %}
+<div class="container" >
+  <div class="row " style="  margin-bottom: 120px;">
+    <div class="col-12">
+    <h3>SYSTEM STATUS </h3>
+     </div>
+    <div class="col-md-12  ">
+      <h1>CPU</h1>
+      <div class="progress-card-blue progress position-relative d-flex align-items-stretch " style="height: 100px;">
+        <div id="cpubar" class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+        
+          <h5   class="progress-card-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cpu" viewBox="0 0 16 16">
+              <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+            </svg>
+          </h5>
+          <h1  id="cputext"  class="progress-card-content">
+            60% 
+          </h1>
+          <div class="progress-card-footer">
+            ...
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12  ">
+      <h1>RAM</h1>
+      <div class="progress-card-yellow progress position-relative d-flex align-items-stretch " style="height: 100px;">
+        <div id="rambar" class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+        
+          <h5  class="progress-card-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-memory" viewBox="0 0 16 16">
+              <path d="M1 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.586a1 1 0 0 0 .707-.293l.353-.353a.5.5 0 0 1 .708 0l.353.353a1 1 0 0 0 .707.293H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H1Zm.5 1h3a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5Zm5 0h3a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5Zm4.5.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-4ZM2 10v2H1v-2h1Zm2 0v2H3v-2h1Zm2 0v2H5v-2h1Zm3 0v2H8v-2h1Zm2 0v2h-1v-2h1Zm2 0v2h-1v-2h1Zm2 0v2h-1v-2h1Z"/>
+            </svg>
+          </h5>
+          <h1 id="ramtext"  class="progress-card-content">
+            60% 
+          </h1>
+          <div class="progress-card-footer">
+            ...
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12  ">
+      <h1>DISK</h1>
+      <div class="progress-card-green progress position-relative d-flex align-items-stretch " style="height: 100px;">
+        <div id="diskbar" class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+        
+          <h5  class="progress-card-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-device-ssd" viewBox="0 0 16 16">
+              <path d="M4.75 4a.75.75 0 0 0-.75.75v3.5c0 .414.336.75.75.75h6.5a.75.75 0 0 0 .75-.75v-3.5a.75.75 0 0 0-.75-.75h-6.5ZM5 8V5h6v3H5Zm0-5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm7 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM4.5 11a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm7 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"/>
+              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2Zm11 12V2a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1v-2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2a1 1 0 0 0 1-1Zm-7.25 1v-2H5v2h.75Zm1.75 0v-2h-.75v2h.75Zm1.75 0v-2H8.5v2h.75ZM11 13h-.75v2H11v-2Z"/>
+            </svg>
+          </h5>
+          <h1 id="disktext"  class="progress-card-content">
+            60% 
+          </h1>
+          <div class="progress-card-footer">
+           ...
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12  ">
+     <h1>TEMP</h1>
+      <div class="progress-card-red progress position-relative d-flex align-items-stretch " style="height: 100px;">
+        <div id="tempbar" class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+        
+          <h5  class="progress-card-title  ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+              <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415z"/>
+              <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1z"/>
+            </svg>
+          </h5>
+          <h1 id="temptext"  class="progress-card-content">
+            60% 
+          </h1>
+          <div class="progress-card-footer">
+            ...
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div> 
+
+  <div class="row " style="  margin-bottom: 120px;">
+  </div>
+</div>
+
+{% endblock content %} 
+ 
+{% block script %}
+<script>
+
+
+function index_update()
+{
+    console.log("index_update_slow");
+
+  // Device Util
+  var myLabel = ['CPU Used', 'CPU Not Used', 'RAM Used', 'RAM Not Used', 'Disk Used', 'Disk Not Used', 'Temp', 'to_critical'];
+  var myData = [[20,80],[33,67],[20,80],[30,70]];
+  var myColor = [['#0dcaf0','#5599FF'],['#ffc107','#ffd700'],['#198754','#90ee90'],['#dc3545','#FF8888']];
+  console.log("...");
+  $.getJSON('/system_monitor',
+  {},
+  function(ret){
+    console.log("Dev_util: ",ret);
+    myData = [[ret.CPU,100-ret.CPU],[ret.RAM,100-ret.RAM],[ret.DISK,100-ret.DISK],[ret.TEMP,100-ret.TEMP]];
+    console.log(myData );
+    document.getElementById("cputext").innerHTML=" "+ret.CPU+"%";
+    document.getElementById("ramtext").innerHTML=" "+ret.RAM+"%";
+    document.getElementById("disktext").innerHTML=" "+ret.DISK+"%";
+    document.getElementById("temptext").innerHTML=" "+ret.TEMP+"°C";
+
+    document.getElementById("cpubar").style.width  = ret.CPU+"%";
+    document.getElementById("rambar").style.width  = ret.RAM+"%";
+    document.getElementById("diskbar").style.width = ret.DISK+"%";
+    document.getElementById("tempbar").style.width = ret.TEMP+"%";
+   // drawMultiPie(myData,myLabel,myColor);
+  }) 
+
+
+}
+
+
+</script>  
+
+<script>
+
+window.onload = function(){
+  index_update(); // Do first time
+  setInterval(    index_update,10000);
+ 
+}
+
+</script>
+{% endblock script%}

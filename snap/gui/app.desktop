@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Web Example
+Comment=Flask Web UI 
+Exec=.desktop-launch
+Icon=${SNAP}/meta/gui/icon.png
+Terminal=false
+Categories=Development;
