@@ -1,5 +1,6 @@
-<h1 align="center">flask_snapcraft_example<h1>
-# D
+<h1 align="center">flask_snapcraft_example</h1>
+
+## Description
 - This is snapcraft example for flask with bootstrap5
 - Use psutil to get system information
 
@@ -12,7 +13,7 @@
 #### Install
     sudo snap install [snap file] --classic --dangerous
 
-### Script
+## Build and install Scripts
 #### Modify [snap file] in script
 ```shell
 echo "> Start Rebuild"
