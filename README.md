@@ -3,6 +3,7 @@
 ## Description
 - This is snapcraft example for flask with bootstrap5
 - Use psutil to get system information
+- Web URL : http://[Your IP]:1234/
 
 
 ## Build SNAP By Command 
